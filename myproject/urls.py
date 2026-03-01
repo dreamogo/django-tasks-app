@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
     path('', views.home, name='home'),
+    path('', include('core.urls')),  # ← this routes / to your core app
 ]

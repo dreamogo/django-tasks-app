@@ -1,9 +1,4 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('', views.home, name='home'),
-]
+def home(request):
+    return HttpResponse("Your Django app is live 🚀")
